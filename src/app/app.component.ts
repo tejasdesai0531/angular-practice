@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-practice';
+  
+  name = "Tejas Desai";
+  enteredName = "";
+
+  printName() {
+    this.enteredName = this.name
+  }
+
+  setName(name: string) {
+    this.name = name
+  }
+
 }
